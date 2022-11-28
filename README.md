@@ -75,9 +75,8 @@ Thursday, 30 November 2022, at 10:00 PM.
 ## ❖・Grading・❖
 | Item                                                      | Points |
 | --------------------------------------------------------- | :----: |
-| *Fully-implemented assignment according to directions*    | `25`   |
+| *Fully-implemented assignment according to directions*    | `50`   |
 | *Overall code quality across Gulp, JavaScript, and CSS*   | `25`   |
-| *Project implemented following assignment directions*     | `25`   |
 | *Full Gulp development and production scaffolds in place* | `25`   |
 
 **Tip**: To ensure the files required by your project are not being ignored, you’re strongly advised to clone your repo into a different folder on your computer, or to a different computer altogether.
