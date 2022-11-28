@@ -68,7 +68,7 @@ As mentioned in the introduction, you must employ Gulp as the task runner with w
 ---
 
 ## ❖・Due・❖
-Tuesday, 29 November 2022, at 10:00 PM.
+Thursday, 30 November 2022, at 10:00 PM.
 
 ---
 
