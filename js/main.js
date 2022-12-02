@@ -23,4 +23,9 @@ window.onload = () => {
     let LB = document.getElementsByTagName(`a`)[0];
     let RB = document.getElementsByTagName(`a`)[1];
     console.log(LB,RB)
+    //ADDING BUTTON CLASSES 2 HTML
+    LB.classList.add(`hidden`,`LB`);
+    RB.classList.add(`RB`);
+    ////////////////////////
+
 }
