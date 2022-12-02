@@ -27,5 +27,8 @@ window.onload = () => {
     LB.classList.add(`hidden`,`LB`);
     RB.classList.add(`RB`);
     ////////////////////////
+    let sldemove = document.querySelectorAll(`div`)[1];
+    sldemove.classList.add(`action`);//<--TRANSITION
+
 
 }
