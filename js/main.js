@@ -53,6 +53,20 @@ window.onload = () => {
                 RB.classList.add(`hidden`);
         }
     };
+// ALLOWS FOR BUTTON MOVEMENT
+LB.addEventListener(`click`, () => {
+    buttonCheck();
+    width += 690;
+    cSlides.style.transform = `translate(`+width+`px)`;
+    index -= 1;
+});
+
+RB.addEventListener(`click`, () => {
+    buttonCheck();
+    width -= 690;
+    cSlides.style.transform = `translate(`+width+`px)`;      
+    index += 1;
+});
 
 
 
