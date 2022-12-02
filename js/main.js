@@ -18,3 +18,9 @@ unction connector(json) {
 
     }
 }
+window.onload = () => {
+    //GATHERING BUTTONS
+    let LB = document.getElementsByTagName(`a`)[0];
+    let RB = document.getElementsByTagName(`a`)[1];
+    console.log(LB,RB)
+}
