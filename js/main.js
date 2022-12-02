@@ -29,6 +29,10 @@ window.onload = () => {
     ////////////////////////
     let sldemove = document.querySelectorAll(`div`)[1];
     sldemove.classList.add(`action`);//<--TRANSITION
+    let htmlb = document.querySelector(`body`);
+    let script = document.createElement(`script`);
+    script.setAttribute(`src`,`json/data.json`);
+    htmlb.append(script); //<--LINKS DATA JSON
 
 
 }
