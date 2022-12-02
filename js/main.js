@@ -1,4 +1,4 @@
-unction connector(json) {
+function connector(json) {
     let sldeOne = document.querySelectorAll(`div`)[1];//<-AQUIRING DATA FOR SLIDES
  
     for (let i = 0; i < json.length; i++) {
@@ -15,9 +15,9 @@ unction connector(json) {
         +(json[i].review.source)+`</a></p>`;
  
          sldeOne.append(div);
-
     }
 }
+ 
 window.onload = () => {
     //GATHERING BUTTONS
     let LB = document.getElementsByTagName(`a`)[0];
@@ -53,22 +53,27 @@ window.onload = () => {
                 RB.classList.add(`hidden`);
         }
     };
-// ALLOWS FOR BUTTON MOVEMENT
-LB.addEventListener(`click`, () => {
-    buttonCheck();
-    width += 690;
-    cSlides.style.transform = `translate(`+width+`px)`;
-    index -= 1;
-});
-
-RB.addEventListener(`click`, () => {
-    buttonCheck();
-    width -= 690;
-    cSlides.style.transform = `translate(`+width+`px)`;      
-    index += 1;
-});
-
-
-
-
-}
+    // the below functions enable user interaction
+    RB.addEventListener(`click`, () => {
+        buttonCheck();
+        width -= 690;
+        cSlides.style.transform = `translate(`+width+`px)`;
+        index += 1;
+    });
+ 
+    LB.addEventListener(`click`, () => {
+        buttonCheck();
+        width += 690;
+        cSlides.style.transform = `translate(`+width+`px)`;      
+        index -= 1;
+    });
+ 
+    document.addEventListener(`keydown`, (e) => {
+        if (e.key === `ArrowRight` && !RB.classList.contains(`hidden`)) {
+            RB.click();
+        } else if (e.key === `ArrowLeft` && !LB.classList.contains(`hidden`)) {
+            LB.click();
+        }
+    });
+ 
+};
