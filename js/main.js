@@ -33,6 +33,28 @@ window.onload = () => {
     let script = document.createElement(`script`);
     script.setAttribute(`src`,`json/data.json`);
     htmlb.append(script); //<--LINKS DATA JSON
+    let cSlides = document.getElementsByClassName(`carousel-slides`)[0];
+    console.log(parent);
+    /////////////////////
+    let width = 0;
+    let index = 0;
+ 
+    // VERIFY SLIDE POSITION 4 BUTTONS
+     let buttonCheck = () =>
+    {
+        if (index > 1 ) {
+                LB.classList.remove(`hidden`);
+        } else
+                LB.classList.add(`hidden`);
+        if (index < 2 ) {
+                RB.classList.remove(`hidden`);
+        } else
+        {
+                RB.classList.add(`hidden`);
+        }
+    };
+
+
 
 
 }
